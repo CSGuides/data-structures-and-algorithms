@@ -3,15 +3,20 @@
   "version": "1.0.0",
   "description": "An introduction to data structures and algorithms.",
   "scripts": {
-    "docs:build": "gitbook build",
-    "docs:watch": "gitbook serve"
+    "clean": "rimraf _book",
+    "build": "gitbook build",
+    "watch": "gitbook serve",
+    "publish": "npm run clean && npm run build && cd _book && git init && git commit --allow-empty -m 'Update book' && git checkout -b gh-pages && git add . && git commit -am 'Update book' && git push git@github.com:cs-guides/data-structures-and-algorithms.git gh-pages --force"
   },
   "authors": [
     "Dan Zheng <zheng321@purdue.edu>",
-	"Emmy Zhang <zhan2235@purdue.edu"
+    "Emmy Zhang <zhan2235@purdue.edu"
   ],
   "license": "MIT",
   "dependencies": {
     "gitbook-plugin-todo": "^0.1.2"
+  },
+  "devDependencies": {
+    "rimraf": "^2.6.1"
   }
 }
