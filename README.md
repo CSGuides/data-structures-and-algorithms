@@ -1,8 +1,8 @@
 # Data Structures and Algorithms
 
-This is a collection of notes on data structures and algorithms based on the [CS 251] course at Purdue University.
+This is a collection of notes on data structures and algorithms based on the CS 251 course at Purdue University.
 
-These notes have been adapted from the [Algorithms, 4th ed.] textbook and from lectures by Professor Hambrusch at Purdue University.
+These notes have been adapted from the [Algorithms, 4th ed.](http://algs4.cs.princeton.edu/home/) textbook and from lectures by Professor Hambrusch at Purdue University.
 
 ## Topics
 
