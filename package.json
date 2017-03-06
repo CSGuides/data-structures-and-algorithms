@@ -1,0 +1,17 @@
+{
+  "name": "data-structures-and-algorithms",
+  "version": "1.0.0",
+  "description": "An introduction to data structures and algorithms.",
+  "scripts": {
+    "docs:build": "gitbook build",
+    "docs:watch": "gitbook serve"
+  },
+  "authors": [
+    "Dan Zheng <zheng321@purdue.edu>",
+	"Emmy Zhang <zhan2235@purdue.edu"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "gitbook-plugin-todo": "^0.1.2"
+  }
+}
