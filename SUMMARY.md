@@ -16,6 +16,8 @@
     - [Red Black Tree](/docs/trees/rbt.md)
     - [2-3 Tree](/docs/trees/23t.md)
 - [Graphs](/docs/graphs/README.md)
+	- [Undirected Graphs](/docs/graphs/undir-graphs.md)
+	- [Directed Graphs](/docs/graphs/dir-graphs.md)
     - [Minimum Spanning Tree](/docs/graphs/mst.md)
     - [Shortest Path Tree](/docs/graphs/spt.md)
 - [Glossary](/docs/glossary.md)
