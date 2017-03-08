@@ -1,0 +1,703 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Sorting · Data Structures and Algorithms</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="elementary.html" />
+    
+    
+    <link rel="prev" href="../introduction/analysis.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="../introduction/fundamentals.html">
+            
+                <a href="../introduction/fundamentals.html">
+            
+                    
+                    Fundamentals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="../introduction/proofs.html">
+            
+                <a href="../introduction/proofs.html">
+            
+                    
+                    Proofs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="../introduction/analysis.html">
+            
+                <a href="../introduction/analysis.html">
+            
+                    
+                    Analysis
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Sorting
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="elementary.html">
+            
+                <a href="elementary.html">
+            
+                    
+                    Elementary Sorts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="mergesort.html">
+            
+                <a href="mergesort.html">
+            
+                    
+                    Mergesort
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="quicksort.html">
+            
+                <a href="quicksort.html">
+            
+                    
+                    Quicksort
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="heapsort.html">
+            
+                <a href="heapsort.html">
+            
+                    
+                    Heapsort
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="counting.html">
+            
+                <a href="counting.html">
+            
+                    
+                    Counting Sorts
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../hashing/">
+            
+                <a href="../hashing/">
+            
+                    
+                    Hashing
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../hashing/separate-chaining.html">
+            
+                <a href="../hashing/separate-chaining.html">
+            
+                    
+                    Separate Chaining
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../hashing/linear-probing.html">
+            
+                <a href="../hashing/linear-probing.html">
+            
+                    
+                    Linear Probing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../trees/">
+            
+                <a href="../trees/">
+            
+                    
+                    Trees
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../trees/bst.html">
+            
+                <a href="../trees/bst.html">
+            
+                    
+                    Binary Search Tree
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../trees/rbt.html">
+            
+                <a href="../trees/rbt.html">
+            
+                    
+                    Red Black Tree
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../trees/23t.html">
+            
+                <a href="../trees/23t.html">
+            
+                    
+                    2-3 Tree
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../graphs/">
+            
+                <a href="../graphs/">
+            
+                    
+                    Graphs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../graphs/undir-graphs.html">
+            
+                <a href="../graphs/undir-graphs.html">
+            
+                    
+                    Undirected Graphs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../graphs/dir-graphs.md">
+            
+                <span>
+            
+                    
+                    Directed Graphs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../graphs/mst.html">
+            
+                <a href="../graphs/mst.html">
+            
+                    
+                    Minimum Spanning Tree
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../graphs/spt.html">
+            
+                <a href="../graphs/spt.html">
+            
+                    
+                    Shortest Path Tree
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../glossary.md">
+            
+                <span>
+            
+                    
+                    Glossary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Sorting</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="sorting">Sorting</h1>
+<p>Sorting is the process of rearranging a sequence of objects into some logical order.</p>
+<ul>
+<li><a href="elementary.html">Elementary Sorts</a></li>
+<li><a href="mergesort.html">Mergesort</a></li>
+<li><a href="quicksort.html">Quicksort</a></li>
+<li><a href="heapsort.html">Heapsort</a></li>
+<li><a href="counting.html">Counting Sorts</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Best case</th>
+<th>Worst case</th>
+<th>Stable?</th>
+<th>In-place?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Insertion</td>
+<td><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex"> O(n) </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathit">n</span><span class="mclose">)</span></span></span></span></td>
+<td><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><msup><mi>n</mi><mn>2</mn></msup><mo>)</mo></mrow><annotation encoding="application/x-tex"> O(n^2) </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.8141079999999999em;"></span><span class="strut bottom" style="height:1.064108em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathit">n</span><span class="msupsub"><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle uncramped mtight"><span class="mord mathrm mtight">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span></span><span class="mclose">)</span></span></span></span></td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Selection</td>
+<td><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><msup><mi>n</mi><mn>2</mn></msup><mo>)</mo></mrow><annotation encoding="application/x-tex"> O(n^2) </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.8141079999999999em;"></span><span class="strut bottom" style="height:1.064108em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathit">n</span><span class="msupsub"><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle uncramped mtight"><span class="mord mathrm mtight">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span></span><span class="mclose">)</span></span></span></span></td>
+<td><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><msup><mi>n</mi><mn>2</mn></msup><mo>)</mo></mrow><annotation encoding="application/x-tex"> O(n^2) </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.8141079999999999em;"></span><span class="strut bottom" style="height:1.064108em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathit">n</span><span class="msupsub"><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle uncramped mtight"><span class="mord mathrm mtight">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span></span><span class="mclose">)</span></span></span></span></td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Mergesort</td>
+<td><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>n</mi><mspace width="0.16667em"></mspace><mtext><mi mathvariant="normal">l</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">g</mi></mtext><mspace width="0.16667em"></mspace><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex"> O(n\,\text{log}\,n) </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathit">n</span><span class="mord text textstyle uncramped"><span class="mspace thinspace"></span><span class="mord mathrm">log</span></span><span class="mord mathit"><span class="mspace thinspace"></span><span class="mord mathit">n</span></span><span class="mclose">)</span></span></span></span></td>
+<td><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>n</mi><mspace width="0.16667em"></mspace><mtext><mi mathvariant="normal">l</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">g</mi></mtext><mspace width="0.16667em"></mspace><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex"> O(n\,\text{log}\,n) </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathit">n</span><span class="mord text textstyle uncramped"><span class="mspace thinspace"></span><span class="mord mathrm">log</span></span><span class="mord mathit"><span class="mspace thinspace"></span><span class="mord mathit">n</span></span><span class="mclose">)</span></span></span></span></td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Quicksort</td>
+<td><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>n</mi><mspace width="0.16667em"></mspace><mtext><mi mathvariant="normal">l</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">g</mi></mtext><mspace width="0.16667em"></mspace><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex"> O(n\,\text{log}\,n) </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathit">n</span><span class="mord text textstyle uncramped"><span class="mspace thinspace"></span><span class="mord mathrm">log</span></span><span class="mord mathit"><span class="mspace thinspace"></span><span class="mord mathit">n</span></span><span class="mclose">)</span></span></span></span></td>
+<td><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><msup><mi>n</mi><mn>2</mn></msup><mo>)</mo></mrow><annotation encoding="application/x-tex"> O(n^2) </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.8141079999999999em;"></span><span class="strut bottom" style="height:1.064108em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathit">n</span><span class="msupsub"><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle uncramped mtight"><span class="mord mathrm mtight">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span></span><span class="mclose">)</span></span></span></span></td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Heapsort</td>
+<td><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>n</mi><mspace width="0.16667em"></mspace><mtext><mi mathvariant="normal">l</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">g</mi></mtext><mspace width="0.16667em"></mspace><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex"> O(n\,\text{log}\,n) </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathit">n</span><span class="mord text textstyle uncramped"><span class="mspace thinspace"></span><span class="mord mathrm">log</span></span><span class="mord mathit"><span class="mspace thinspace"></span><span class="mord mathit">n</span></span><span class="mclose">)</span></span></span></span></td>
+<td><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>n</mi><mspace width="0.16667em"></mspace><mtext><mi mathvariant="normal">l</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">g</mi></mtext><mspace width="0.16667em"></mspace><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex"> O(n\,\text{log}\,n) </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathit">n</span><span class="mord text textstyle uncramped"><span class="mspace thinspace"></span><span class="mord mathrm">log</span></span><span class="mord mathit"><span class="mspace thinspace"></span><span class="mord mathit">n</span></span><span class="mclose">)</span></span></span></span></td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+<p>Stability is whether the sorting algoritm keeps the original order of elements that have the same key. For examplegiven this list of unsorted elements,</p>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Key</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bob</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Kate</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Kevin</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Varun</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Natasha</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Jason</td>
+<td>4</td>
+</tr>
+</tbody>
+</table>
+<p>there are two possible outcomes: </p>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Key</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Kate</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Bob</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Kevin</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Varun</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Jason</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Natasha</td>
+<td>5</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Key</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Kate</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Bob</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Kevin</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Jason</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Varun</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Natasha</td>
+<td>5</td>
+</tr>
+</tbody>
+</table>
+<p>For a stable sorting algorithm, only the first outcome is correct. In the second outcome, while the keys sorted, the order of the values Jason and Varun are not maintained.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../introduction/analysis.html" class="navigation navigation-prev " aria-label="Previous page: Analysis">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="elementary.html" class="navigation navigation-next " aria-label="Next page: Elementary Sorts">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Sorting","level":"1.2","depth":1,"next":{"title":"Elementary Sorts","level":"1.2.1","depth":2,"path":"docs/sorting/elementary.md","ref":"docs/sorting/elementary.md","articles":[]},"previous":{"title":"Analysis","level":"1.1.3","depth":2,"path":"docs/introduction/analysis.md","ref":"docs/introduction/analysis.md","articles":[]},"dir":"ltr"},"config":{"plugins":["todo","katex"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"todo":{},"katex":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Data Structures and Algorithms","gitbook":"3.*.*"},"file":{"path":"docs/sorting/README.md","mtime":"2017-03-08T19:03:10.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-08T19:40:06.966Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
